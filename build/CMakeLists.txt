@@ -47,11 +47,11 @@ set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
 
 #begin lua-cjson
 set (CJSON_SRC 
-    lua-cjson/source/lua_cjson.c
-    lua-cjson/source/dtoa.c
-    lua-cjson/source/fpconv.c
-    lua-cjson/source/g_fmt.c
-    lua-cjson/source/strbuf.c
+    lua-cjson/lua_cjson.c
+    lua-cjson/dtoa.c
+    lua-cjson/fpconv.c
+    lua-cjson/g_fmt.c
+    lua-cjson/strbuf.c
 )
 set_property(
 	SOURCE ${CJSON_SRC}
