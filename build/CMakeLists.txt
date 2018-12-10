@@ -49,7 +49,6 @@ set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
 set (CJSON_SRC 
     lua-cjson/lua_cjson.c
     lua-cjson/dtoa.c
-    lua-cjson/fpconv.c
     lua-cjson/g_fmt.c
     lua-cjson/strbuf.c
 )
