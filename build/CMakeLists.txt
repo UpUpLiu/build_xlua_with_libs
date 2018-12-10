@@ -45,6 +45,24 @@ list(APPEND THIRDPART_INC  lua-rapidjson/include)
 set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
 #end lua-rapidjson
 
+#begin lua-cjson
+set (CJSON_SRC 
+    lua-cjson/source/lua_cjson.c
+    lua-cjson/source/dtoa.c
+    lua-cjson/source/fpconv.c
+    lua-cjson/source/g_fmt.c
+    lua-cjson/source/strbuf.c
+)
+set_property(
+	SOURCE ${CJSON_SRC}
+	APPEND
+	PROPERTY COMPILE_DEFINITIONS
+	LUA_LIB
+)
+list(APPEND THIRDPART_INC  lua-rapidjson/include)
+set (THIRDPART_SRC ${THIRDPART_SRC} ${CJSON_SRC})
+#end lua-cjson
+
 #begin lua-profobuf
 set (LPB_SRC 
     lua-protobuf/pb.c
