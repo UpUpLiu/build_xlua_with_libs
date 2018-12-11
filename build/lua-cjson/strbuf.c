@@ -28,7 +28,7 @@
 #include <string.h>
 
 #include "strbuf.h"
-
+#define strncasecmp  _strnicmp
 static void die(const char *fmt, ...)
 {
     va_list arg;
