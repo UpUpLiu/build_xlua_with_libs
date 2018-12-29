@@ -1,3 +1,6 @@
 [submodule "build/lua-protobuf"]
 	path = build/lua-protobuf
 	url = https://github.com/starwing/lua-protobuf
+[submodule "build/luafilesystem"]
+	path = build/luafilesystem
+	url = https://github.com/keplerproject/luafilesystem.git
