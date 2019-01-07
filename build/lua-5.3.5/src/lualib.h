@@ -56,6 +56,9 @@ LUAMOD_API int (luaopen_lfs)(lua_State *L);
 #define LUA_PBLIBNAME	"pb"
 LUAMOD_API int (luaopen_pb)(lua_State *L);
 
+#define LUA_PBIOLIBNAME	"pb.io"
+LUAMOD_API int (luaopen_pb_io)(lua_State *L);
+
 #define LUA_RAPIRDJSONLIBNAME	"rapidjson"
 LUAMOD_API int (luaopen_rapidjson)(lua_State *L);
 
