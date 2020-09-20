@@ -22,6 +22,8 @@ endif ()
 
 option ( UINT_ESPECIALLY "using custom ulong" OFF )
 option ( USING_LUAJIT "using luajit" OFF )
+option ( GC64 "using gc64" OFF )
+option ( LUAC_COMPATIBLE_FORMAT "compatible format" OFF )
 
 find_path(XLUA_PROJECT_DIR NAMES SConstruct
     PATHS 
@@ -33,82 +35,10 @@ MARK_AS_ADVANCED(XLUA_PROJECT_DIR)
 
 set(LUA_SRC_PATH lua-5.3.5/src)
 set(LUAJIT_SRC_PATH luajit-2.1.0b3/src)
-#begin lua-rapidjson
-set (RAPIDJSON_SRC lua-rapidjson/source/rapidjson.cpp)
-set_property(
-	SOURCE ${RAPIDJSON_SRC}
-	APPEND
-	PROPERTY COMPILE_DEFINITIONS
-	LUA_LIB
-)
-list(APPEND THIRDPART_INC  lua-rapidjson/include)
-set (THIRDPART_SRC ${THIRDPART_SRC} ${RAPIDJSON_SRC})
-#end lua-rapidjson
-
-#begin lua-profobuf
-set (LPB_SRC 
-    lua-protobuf/pb.c
-)
-set_property(
-	SOURCE ${LPB_SRC}
-	APPEND
-	PROPERTY COMPILE_DEFINITIONS
-	LUA_LIB
-)
-list(APPEND THIRDPART_INC lua-protobuf)
-set (THIRDPART_SRC ${THIRDPART_SRC} ${LPB_SRC})
-#end lua-protobuf
-
-#begin lpeg
-set ( LPEG_SRC
-    lpeg/lpcap.c
-    lpeg/lpcode.c
-    lpeg/lpprint.c
-    lpeg/lptree.c
-    lpeg/lpvm.c
-)
-set_property(
-    SOURCE ${LPEG_SRC}
-    APPEND
-    PROPERTY COMPILE_DEFINITIONS
-    LUA_LIB
-)
-list(APPEND THIRDPART_INC  lpeg)
-set (THIRDPART_SRC ${THIRDPART_SRC} ${LPEG_SRC})
-#end lpeg
-
-#begin FFI
-if (NOT USING_LUAJIT)
-	set (FFI_SRC ffi/parser.c ffi/ctype.c ffi/ffi.c)
-	set_property(
-		SOURCE ${FFI_SRC}
-		APPEND
-		PROPERTY COMPILE_DEFINITIONS
-		LUA_LIB
-	)
-	list(APPEND THIRDPART_INC  ffi)
-	set (THIRDPART_SRC ${THIRDPART_SRC} ${FFI_SRC})
-endif ()
-#end FFI
-
-#begin lfs
-set ( LFS_SRC
-    luafilesystem/src/lfs.c
-    luafilesystem/src/lfs.h
-)
-set_property(
-    SOURCE ${LFS_SRC}
-    APPEND
-    PROPERTY COMPILE_DEFINITIONS
-    LUA_LIB
-)
-list(APPEND THIRDPART_INC  lfs)
-set (THIRDPART_SRC ${THIRDPART_SRC} ${LFS_SRC})
-#end lfs
 
 if (USING_LUAJIT)
 	
-    if (APPLE AND NOT IOS)
+    if (APPLE AND NOT IOS AND NOT ANDROID)
 	    include_directories(
 		  ${CMAKE_SOURCE_DIR}
 		  lua-5.1.5/src
@@ -134,7 +64,7 @@ if (USING_LUAJIT)
     endif ()
 	set ( LUA_LIB )
 else ()
-	set ( LUA_IDSIZE 120 CACHE NUMBER "gives the maximum size for the description of the source." )
+	set ( LUA_IDSIZE 120 CACHE STRING "gives the maximum size for the description of the source." )
 
 	configure_file ( ${LUA_SRC_PATH}/luaconf.h.in ${CMAKE_CURRENT_BINARY_DIR}/luaconf.h )
 
@@ -176,9 +106,12 @@ endif ( )
 
 set ( XLUA_CORE
     i64lib.c
-    perflib.c
     xlua.c
 )
+
+if (NOT USING_LUAJIT)
+    list (APPEND XLUA_CORE memory_leak_checker.c)
+endif ( )
 
 macro(source_group_by_dir proj_dir source_files)
     if(MSVC OR APPLE)
@@ -212,9 +145,10 @@ if (APPLE)
            ${XLUA_CORE}
            ${THIRDPART_SRC}
         )
-		set_xcode_property (xlua IPHONEOS_DEPLOYMENT_TARGET "7.0")
+		set_xcode_property (xlua IPHONEOS_DEPLOYMENT_TARGET "7.0" "all")
     else ()
-        set(CMAKE_OSX_ARCHITECTURES "$(ARCHS_STANDARD_32_64_BIT)")
+        ADD_DEFINITIONS(-DLUA_USE_MACOSX) #osx platform emmylua debugger must have this option or can not load cpath
+        set(CMAKE_OSX_ARCHITECTURES "$(ARCHS_STANDARD_64_BIT)")
         add_library(xlua MODULE
             ${LUA_CORE}
             ${LUA_LIB}
@@ -226,6 +160,14 @@ if (APPLE)
         #set_target_properties ( xlua PROPERTIES FRAMEWORK TRUE )
         #set_target_properties ( xlua PROPERTIES MACOSX_RPATH TRUE )
     endif ()
+elseif ("${CMAKE_SYSTEM_NAME}" STREQUAL "Switch")
+    add_library(xlua STATIC
+        ${LUA_CORE}
+        ${LUA_LIB}
+        ${XLUA_CORE}
+        ${THIRDPART_SRC}
+    )
+    target_compile_options(xlua PRIVATE -m64 -mcpu=cortex-a57+fp+simd+crypto+crc -fno-common -fno-short-enums -ffunction-sections -fdata-sections -fPIC -fms-extensions)
 else ( )
     add_library(xlua SHARED
         ${LUA_CORE}
@@ -239,6 +181,14 @@ endif ( )
 if ( WIN32 AND NOT CYGWIN )
     target_compile_definitions (xlua PRIVATE LUA_BUILD_AS_DLL)
 endif ( )
+
+if (GC64 AND USING_LUAJIT)
+    target_compile_definitions (xlua PRIVATE LUAJIT_ENABLE_GC64)
+endif ()
+
+if (LUAC_COMPATIBLE_FORMAT AND NOT USING_LUAJIT)
+    target_compile_definitions (xlua PRIVATE LUAC_COMPATIBLE_FORMAT)
+endif ()
 
 set_property(
 	SOURCE ${LUA_SOCKET}

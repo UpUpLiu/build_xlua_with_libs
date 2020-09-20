@@ -47,22 +47,6 @@ LUAMOD_API int (luaopen_debug) (lua_State *L);
 #define LUA_LOADLIBNAME	"package"
 LUAMOD_API int (luaopen_package) (lua_State *L);
 
-#define LUA_SOCKETLIBNAME "socket"
-LUAMOD_API int (luaopen_socket_core)(lua_State *L);
-
-#define LUA_LFSLIBNAME	"lfs"
-LUAMOD_API int (luaopen_lfs)(lua_State *L);
-
-#define LUA_PBLIBNAME	"pb"
-LUAMOD_API int (luaopen_pb)(lua_State *L);
-
-#define LUA_PBIOLIBNAME	"pb.io"
-LUAMOD_API int (luaopen_pb_io)(lua_State *L);
-
-#define LUA_RAPIRDJSONLIBNAME	"rapidjson"
-LUAMOD_API int (luaopen_rapidjson)(lua_State *L);
-
-
 
 /* open all previous libraries */
 LUALIB_API void (luaL_openlibs) (lua_State *L);
