@@ -145,6 +145,17 @@ if (USING_LUAJIT)
           lua-5.1.5/src/lstring.c lua-5.1.5/src/ltable.c lua-5.1.5/src/ltm.c lua-5.1.5/src/lundump.c lua-5.1.5/src/lvm.c lua-5.1.5/src/lzio.c lua-5.1.5/src/lauxlib.c 
           lua-5.1.5/src/lbaselib.c lua-5.1.5/src/ldblib.c lua-5.1.5/src/liolib.c lua-5.1.5/src/lmathlib.c lua-5.1.5/src/loslib.c lua-5.1.5/src/ltablib.c 
           lua-5.1.5/src/lstrlib.c lua-5.1.5/src/linit.c lua-5.1.5/src/loadlib.c)
+        set ( BIT_SRC
+            LuaBitOp-1.0.2/bit.c
+        )
+        set_property(
+            SOURCE ${BIT_SRC}
+            APPEND
+            PROPERTY COMPILE_DEFINITIONS
+            LUA_LIB
+        )
+        list(APPEND THIRDPART_INC  bit)
+        set (THIRDPART_SRC ${THIRDPART_SRC} ${BIT_SRC})
 	else ()
 	    include_directories(
 		  ${CMAKE_SOURCE_DIR}

@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7EB92B13D3CE4374AF660AE8 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E4C3B0111B744F8E9BFE7D5C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				AC5269BD9D814F0D80A11CCD /* CMake Rules */,
+			);
+			dependencies = (
+				F511E946BD5B44C99CF047D5 /* PBXTargetDependency */,
+				58BBD78DF9C34AD281109D77 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D11913483FA44857919AC926 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B026026BDF2341DF8A50CD0F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				B2015ED2D07440289F1D39C6 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03257CE42196425F9500AEBC /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loadlib.c */ = {isa = PBXBuildFile; fileRef = C682878D65834B809517DB63 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loadlib.c */; };
+		036B00D8853B46DBAB8C7618 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/source/rapidjson.cpp */ = {isa = PBXBuildFile; fileRef = F4C723EA10F64CBC9D9FFDB4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/source/rapidjson.cpp */; settings = {COMPILER_FLAGS = "-DLUA_LIB "; }; };
+		0A2A30FA9356470C864EF3A5 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lfunc.c */ = {isa = PBXBuildFile; fileRef = 4006A360600140C4AC0DF077 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lfunc.c */; };
+		16659C57C8544EB887F7686F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lvm.c */ = {isa = PBXBuildFile; fileRef = FB4604C7D2FF47229D90F760 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lvm.c */; };
+		185FA23300544D43AE0F1BBF /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltm.c */ = {isa = PBXBuildFile; fileRef = EFA9630AB8BE4F72BDF5EDF7 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltm.c */; };
+		18F5D93681644673B5E300B5 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/linit.c */ = {isa = PBXBuildFile; fileRef = B1A538FDA5B146949168CED1 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/linit.c */; };
+		26A3E88D84CB4063A21A1692 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/i64lib.c */ = {isa = PBXBuildFile; fileRef = B6CCBE0FDB1A461D93D1C537 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/i64lib.c */; };
+		27741A29BB304C63B23F388A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9F0F56EC1E594A2FB59A618F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/CMakeLists.txt */; };
+		2A9A8610E0AA4398911769FF /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/tcp.c */ = {isa = PBXBuildFile; fileRef = 4C1D058C1E2B43CA8D9950D8 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/tcp.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		32104B33733E4FB9B792BA34 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmathlib.c */ = {isa = PBXBuildFile; fileRef = 5347CABC1B684F8BB840180E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmathlib.c */; };
+		3D4BE3D4A1924182ABC32BAE /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/options.c */ = {isa = PBXBuildFile; fileRef = A31B2D529F4C4401A6BE5E55 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/options.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		3D59E03803534E5BA6B107AE /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltable.c */ = {isa = PBXBuildFile; fileRef = 6403335B71454EA6845CEB6C /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltable.c */; };
+		41CEA07A310F454ABA2179AC /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmem.c */ = {isa = PBXBuildFile; fileRef = FF2061FC9C1C4A7492CE0F7D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmem.c */; };
+		420D40E3D333479981338D65 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcode.c */ = {isa = PBXBuildFile; fileRef = A14F3758A0A848619A626B4E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcode.c */; settings = {COMPILER_FLAGS = "-DLUA_LIB "; }; };
+		44215B76E20D4EB491BD5740 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpprint.c */ = {isa = PBXBuildFile; fileRef = 8901E0901BEE4049BF10F4DD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpprint.c */; settings = {COMPILER_FLAGS = "-DLUA_LIB "; }; };
+		451F53467AAB49D3BB146196 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/select.c */ = {isa = PBXBuildFile; fileRef = 8C4F5753F95F4A2AA6E8FF47 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/select.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		46DC661F5D9547BCA6508361 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lobject.c */ = {isa = PBXBuildFile; fileRef = 2CBF44DF7F74478BB8DBCFBA /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lobject.c */; };
+		4A052DCBEE0C48A281839746 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lapi.c */ = {isa = PBXBuildFile; fileRef = 0E6CF614CD734297AC9D9313 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lapi.c */; };
+		50C480CEB5C340C0B01CD1BD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/mime.c */ = {isa = PBXBuildFile; fileRef = 1B594E1FC8AB4C99BF698124 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/mime.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		5169EDDB5A3744DF844B2551 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/inet.c */ = {isa = PBXBuildFile; fileRef = 36777DE0A75B4903A907E9DB /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/inet.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		530089C64B7946DA9868B647 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstate.c */ = {isa = PBXBuildFile; fileRef = 37EAB96D3F0F4353A80B50FD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstate.c */; };
+		5A8AB09B51094748993633DC /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/xlua.c */ = {isa = PBXBuildFile; fileRef = 19A1556753B74354A5C870C6 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/xlua.c */; };
+		5AC6A475B824480588C67D96 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lbaselib.c */ = {isa = PBXBuildFile; fileRef = 9842B7B6599B4309B0C550C4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lbaselib.c */; };
+		5E162261F6CC42059191DDC2 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/timeout.c */ = {isa = PBXBuildFile; fileRef = E90B5A2E112C468B8F60061A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/timeout.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		5EBE9B06B0514D7289F8D420 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstring.c */ = {isa = PBXBuildFile; fileRef = 64EB9078B2794C42B6EDE31B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstring.c */; };
+		6EFF0F46B2BB4E28B208282F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/liolib.c */ = {isa = PBXBuildFile; fileRef = 55DA7B740681450CA5CF0E7B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/liolib.c */; };
+		780DE18E1B90434282686313 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lopcodes.c */ = {isa = PBXBuildFile; fileRef = 77A9E1F6A2CB42FD8D20D001 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lopcodes.c */; };
+		7AA549D1C5274C50BABA4E6F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcap.c */ = {isa = PBXBuildFile; fileRef = C52D0CE93F5640DEAF42F78D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcap.c */; settings = {COMPILER_FLAGS = "-DLUA_LIB "; }; };
+		7FCFEEB110C44D35B24CA6B4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loslib.c */ = {isa = PBXBuildFile; fileRef = 0CE694ED097D4617A9255523 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loslib.c */; };
+		84C99B0598E5420ABED91537 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/auxiliar.c */ = {isa = PBXBuildFile; fileRef = AC8E41F410A04C178F961183 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/auxiliar.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		8564FF3EDF064216B8B82D41 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldo.c */ = {isa = PBXBuildFile; fileRef = FD05A71FCBA3449AB1632C9B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldo.c */; };
+		89486D9FE4FE452EB3A009B4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/perflib.c */ = {isa = PBXBuildFile; fileRef = 5794FC6E1A8F44F9ADFA3700 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/perflib.c */; };
+		8F04023ED85E4B16B902B954 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltablib.c */ = {isa = PBXBuildFile; fileRef = 261B8F2EE3F54E0EB68DA925 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltablib.c */; };
+		8FFDEEE065A34C3FBE0FDAD2 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lauxlib.c */ = {isa = PBXBuildFile; fileRef = B5B890B47384499B8324806A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lauxlib.c */; };
+		92EB194DB3494AC288EC0EF0 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpvm.c */ = {isa = PBXBuildFile; fileRef = DA4224B64FDC4D8386AACF9E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpvm.c */; settings = {COMPILER_FLAGS = "-DLUA_LIB "; }; };
+		A0B65E17B25A4517B375C51D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/io.c */ = {isa = PBXBuildFile; fileRef = E5172D897BC64C9CAD779C70 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/io.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		A5E50FEDBBBF487BA0DC556B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/udp.c */ = {isa = PBXBuildFile; fileRef = D1E9E356D95543469F312929 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/udp.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		A60A09349A9D48F0A3D51E21 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf/pb.c */ = {isa = PBXBuildFile; fileRef = 1402BA4A2D244A5F972D8823 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf/pb.c */; settings = {COMPILER_FLAGS = "-DLUA_LIB "; }; };
+		A7F03A5AC62B417D9215F46F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lgc.c */ = {isa = PBXBuildFile; fileRef = 9BCF12668AE34245A6A43CE4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lgc.c */; };
+		ACB8D2716DDD4FBEAAA35E21 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldblib.c */ = {isa = PBXBuildFile; fileRef = 38AFB3854D9E4179AEBABC0D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldblib.c */; };
+		B1D45DDA159B495E8BD13DCE /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/luasocket.c */ = {isa = PBXBuildFile; fileRef = BA7AFFCD73DC4CB09DA75CCD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/luasocket.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		B5DACC19F0A64528AB97D086 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lcode.c */ = {isa = PBXBuildFile; fileRef = 316D7D852CC74E729EC35C9C /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lcode.c */; };
+		B826D868D6AA4D5BBBB9760A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldump.c */ = {isa = PBXBuildFile; fileRef = 3B41AAD144DD4FF6B1D33EE6 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldump.c */; };
+		BF929DF1FFA94C1BAEB1DD45 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/buffer.c */ = {isa = PBXBuildFile; fileRef = 9A6EEECCB39C435CBA108B18 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/buffer.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		CA77C02E847A46D0A0A79F6E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstrlib.c */ = {isa = PBXBuildFile; fileRef = C7A8094428034B2F9A4C047F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstrlib.c */; };
+		D2B2DD11559D458184011426 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/except.c */ = {isa = PBXBuildFile; fileRef = CEA076B9A8F148B78F79C848 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/except.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		D956A57B576D4B9A88275203 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/usocket.c */ = {isa = PBXBuildFile; fileRef = 91C07147EC2B45E1A789BF2F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/usocket.c */; settings = {COMPILER_FLAGS = "-DLUA_COMPAT_APIINTCASTS -DLUA_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS "; }; };
+		E81379D963A448398BD9AFAD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lundump.c */ = {isa = PBXBuildFile; fileRef = 0B4C886EAAB341A58F157317 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lundump.c */; };
+		E88281A25C504F3F941B6B5A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldebug.c */ = {isa = PBXBuildFile; fileRef = E25DC98AC8E24B0DB4CA3616 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldebug.c */; };
+		EB41E45CF35F4517AF50DE8F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lptree.c */ = {isa = PBXBuildFile; fileRef = AEA3827D858F42DDB70DC023 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lptree.c */; settings = {COMPILER_FLAGS = "-DLUA_LIB "; }; };
+		F0559E5F58C047E0BA8E4DC7 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lparser.c */ = {isa = PBXBuildFile; fileRef = F0F4F616D9454B658942F07A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lparser.c */; };
+		F6955D61C56042C6A830AC3F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/LuaBitOp-1.0.2/bit.c */ = {isa = PBXBuildFile; fileRef = E82DDFE4ABCF4AECAB426A19 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/LuaBitOp-1.0.2/bit.c */; settings = {COMPILER_FLAGS = "-DLUA_LIB "; }; };
+		F92C64DA8859480583A30589 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lzio.c */ = {isa = PBXBuildFile; fileRef = 03470E3E2D104609B0E51426 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lzio.c */; };
+		FB3AD33205C74C6D899C7AD0 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/llex.c */ = {isa = PBXBuildFile; fileRef = 294DFB2FC8DD421BBC826FB4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/llex.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		48784ACB89C545BE9BE5DC13 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		591742F7A4FF40B59071C83F /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		5DE2FEF2D5244D91A7B1B4D0 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		B95B1661F7024149ACBEBAE0 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		3D82B886669B41F68923B6B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA1823128596487090F1026C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 161F8C96082341B089F4B79A;
+			remoteInfo = xlua;
+		};
+		9546C54A1AB54EEDBC0954CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA1823128596487090F1026C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D11913483FA44857919AC926;
+			remoteInfo = ZERO_CHECK;
+		};
+		EE8FA1FCDB2E4477B08170B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA1823128596487090F1026C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D11913483FA44857919AC926;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03470E3E2D104609B0E51426 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lzio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lzio.c; path = "lua-5.1.5/src/lzio.c"; sourceTree = SOURCE_ROOT; };
+		0B4C886EAAB341A58F157317 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lundump.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lundump.c; path = "lua-5.1.5/src/lundump.c"; sourceTree = SOURCE_ROOT; };
+		0CE694ED097D4617A9255523 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loslib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = loslib.c; path = "lua-5.1.5/src/loslib.c"; sourceTree = SOURCE_ROOT; };
+		0E6CF614CD734297AC9D9313 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lapi.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lapi.c; path = "lua-5.1.5/src/lapi.c"; sourceTree = SOURCE_ROOT; };
+		1402BA4A2D244A5F972D8823 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf/pb.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pb.c; path = "lua-protobuf/pb.c"; sourceTree = SOURCE_ROOT; };
+		19A1556753B74354A5C870C6 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/xlua.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = xlua.c; path = xlua.c; sourceTree = SOURCE_ROOT; };
+		1B594E1FC8AB4C99BF698124 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/mime.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mime.c; path = luasocket/mime.c; sourceTree = SOURCE_ROOT; };
+		261B8F2EE3F54E0EB68DA925 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltablib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ltablib.c; path = "lua-5.1.5/src/ltablib.c"; sourceTree = SOURCE_ROOT; };
+		294DFB2FC8DD421BBC826FB4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/llex.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = llex.c; path = "lua-5.1.5/src/llex.c"; sourceTree = SOURCE_ROOT; };
+		2CBF44DF7F74478BB8DBCFBA /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lobject.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lobject.c; path = "lua-5.1.5/src/lobject.c"; sourceTree = SOURCE_ROOT; };
+		316D7D852CC74E729EC35C9C /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lcode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lcode.c; path = "lua-5.1.5/src/lcode.c"; sourceTree = SOURCE_ROOT; };
+		36777DE0A75B4903A907E9DB /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/inet.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = inet.c; path = luasocket/inet.c; sourceTree = SOURCE_ROOT; };
+		37EAB96D3F0F4353A80B50FD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstate.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lstate.c; path = "lua-5.1.5/src/lstate.c"; sourceTree = SOURCE_ROOT; };
+		38AFB3854D9E4179AEBABC0D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldblib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ldblib.c; path = "lua-5.1.5/src/ldblib.c"; sourceTree = SOURCE_ROOT; };
+		3B41AAD144DD4FF6B1D33EE6 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldump.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ldump.c; path = "lua-5.1.5/src/ldump.c"; sourceTree = SOURCE_ROOT; };
+		4006A360600140C4AC0DF077 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lfunc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lfunc.c; path = "lua-5.1.5/src/lfunc.c"; sourceTree = SOURCE_ROOT; };
+		4C1D058C1E2B43CA8D9950D8 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/tcp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tcp.c; path = luasocket/tcp.c; sourceTree = SOURCE_ROOT; };
+		5347CABC1B684F8BB840180E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmathlib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lmathlib.c; path = "lua-5.1.5/src/lmathlib.c"; sourceTree = SOURCE_ROOT; };
+		55DA7B740681450CA5CF0E7B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/liolib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = liolib.c; path = "lua-5.1.5/src/liolib.c"; sourceTree = SOURCE_ROOT; };
+		5794FC6E1A8F44F9ADFA3700 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/perflib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = perflib.c; path = perflib.c; sourceTree = SOURCE_ROOT; };
+		5AC4F877785C4AB89C36A36C /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6403335B71454EA6845CEB6C /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltable.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ltable.c; path = "lua-5.1.5/src/ltable.c"; sourceTree = SOURCE_ROOT; };
+		64EB9078B2794C42B6EDE31B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstring.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lstring.c; path = "lua-5.1.5/src/lstring.c"; sourceTree = SOURCE_ROOT; };
+		77A9E1F6A2CB42FD8D20D001 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lopcodes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lopcodes.c; path = "lua-5.1.5/src/lopcodes.c"; sourceTree = SOURCE_ROOT; };
+		8901E0901BEE4049BF10F4DD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpprint.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lpprint.c; path = lpeg/lpprint.c; sourceTree = SOURCE_ROOT; };
+		8C4F5753F95F4A2AA6E8FF47 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/select.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = select.c; path = luasocket/select.c; sourceTree = SOURCE_ROOT; };
+		91C07147EC2B45E1A789BF2F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/usocket.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = usocket.c; path = luasocket/usocket.c; sourceTree = SOURCE_ROOT; };
+		9842B7B6599B4309B0C550C4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lbaselib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lbaselib.c; path = "lua-5.1.5/src/lbaselib.c"; sourceTree = SOURCE_ROOT; };
+		9A6EEECCB39C435CBA108B18 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = buffer.c; path = luasocket/buffer.c; sourceTree = SOURCE_ROOT; };
+		9BCF12668AE34245A6A43CE4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lgc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lgc.c; path = "lua-5.1.5/src/lgc.c"; sourceTree = SOURCE_ROOT; };
+		9F0F56EC1E594A2FB59A618F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A14F3758A0A848619A626B4E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lpcode.c; path = lpeg/lpcode.c; sourceTree = SOURCE_ROOT; };
+		A31B2D529F4C4401A6BE5E55 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/options.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = options.c; path = luasocket/options.c; sourceTree = SOURCE_ROOT; };
+		AC8E41F410A04C178F961183 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/auxiliar.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = auxiliar.c; path = luasocket/auxiliar.c; sourceTree = SOURCE_ROOT; };
+		AEA3827D858F42DDB70DC023 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lptree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lptree.c; path = lpeg/lptree.c; sourceTree = SOURCE_ROOT; };
+		B1A538FDA5B146949168CED1 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/linit.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = linit.c; path = "lua-5.1.5/src/linit.c"; sourceTree = SOURCE_ROOT; };
+		B5B890B47384499B8324806A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lauxlib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lauxlib.c; path = "lua-5.1.5/src/lauxlib.c"; sourceTree = SOURCE_ROOT; };
+		B6CCBE0FDB1A461D93D1C537 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/i64lib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = i64lib.c; path = i64lib.c; sourceTree = SOURCE_ROOT; };
+		BA7AFFCD73DC4CB09DA75CCD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/luasocket.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = luasocket.c; path = luasocket/luasocket.c; sourceTree = SOURCE_ROOT; };
+		C52D0CE93F5640DEAF42F78D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lpcap.c; path = lpeg/lpcap.c; sourceTree = SOURCE_ROOT; };
+		C682878D65834B809517DB63 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loadlib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = loadlib.c; path = "lua-5.1.5/src/loadlib.c"; sourceTree = SOURCE_ROOT; };
+		C7A8094428034B2F9A4C047F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstrlib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lstrlib.c; path = "lua-5.1.5/src/lstrlib.c"; sourceTree = SOURCE_ROOT; };
+		CEA076B9A8F148B78F79C848 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/except.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = except.c; path = luasocket/except.c; sourceTree = SOURCE_ROOT; };
+		D1E9E356D95543469F312929 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/udp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = udp.c; path = luasocket/udp.c; sourceTree = SOURCE_ROOT; };
+		DA4224B64FDC4D8386AACF9E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpvm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lpvm.c; path = lpeg/lpvm.c; sourceTree = SOURCE_ROOT; };
+		E25DC98AC8E24B0DB4CA3616 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldebug.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ldebug.c; path = "lua-5.1.5/src/ldebug.c"; sourceTree = SOURCE_ROOT; };
+		E30D03D1F53C4E7099E752B0 /* xlua */ = {isa = PBXFileReference; explicitFileType = "wrapper.plug-in"; path = xlua.bundle/Contents/MacOS/xlua; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5172D897BC64C9CAD779C70 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/io.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = io.c; path = luasocket/io.c; sourceTree = SOURCE_ROOT; };
+		E82DDFE4ABCF4AECAB426A19 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/LuaBitOp-1.0.2/bit.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bit.c; path = "LuaBitOp-1.0.2/bit.c"; sourceTree = SOURCE_ROOT; };
+		E90B5A2E112C468B8F60061A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/timeout.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = timeout.c; path = luasocket/timeout.c; sourceTree = SOURCE_ROOT; };
+		EFA9630AB8BE4F72BDF5EDF7 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ltm.c; path = "lua-5.1.5/src/ltm.c"; sourceTree = SOURCE_ROOT; };
+		F0F4F616D9454B658942F07A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lparser.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lparser.c; path = "lua-5.1.5/src/lparser.c"; sourceTree = SOURCE_ROOT; };
+		F4C723EA10F64CBC9D9FFDB4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/source/rapidjson.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rapidjson.cpp; path = "lua-rapidjson/source/rapidjson.cpp"; sourceTree = SOURCE_ROOT; };
+		FB4604C7D2FF47229D90F760 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lvm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lvm.c; path = "lua-5.1.5/src/lvm.c"; sourceTree = SOURCE_ROOT; };
+		FD05A71FCBA3449AB1632C9B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ldo.c; path = "lua-5.1.5/src/ldo.c"; sourceTree = SOURCE_ROOT; };
+		FF2061FC9C1C4A7492CE0F7D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmem.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lmem.c; path = "lua-5.1.5/src/lmem.c"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1F8362685282427084281566 /* xlua */ = {
+			isa = PBXGroup;
+			children = (
+				A2DDE928FE9F43798605CE40 /* lua-5.1.5 */,
+				D24008F7708E400EA9FCE7F1 /* luasocket */,
+				369739C5EC0447328F02F9F1 /* Source Files */,
+				9F0F56EC1E594A2FB59A618F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/CMakeLists.txt */,
+				B6CCBE0FDB1A461D93D1C537 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/i64lib.c */,
+				5794FC6E1A8F44F9ADFA3700 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/perflib.c */,
+				19A1556753B74354A5C870C6 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/xlua.c */,
+			);
+			name = xlua;
+			sourceTree = "<group>";
+		};
+		369739C5EC0447328F02F9F1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E82DDFE4ABCF4AECAB426A19 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/LuaBitOp-1.0.2/bit.c */,
+				C52D0CE93F5640DEAF42F78D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcap.c */,
+				A14F3758A0A848619A626B4E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcode.c */,
+				8901E0901BEE4049BF10F4DD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpprint.c */,
+				AEA3827D858F42DDB70DC023 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lptree.c */,
+				DA4224B64FDC4D8386AACF9E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpvm.c */,
+				1402BA4A2D244A5F972D8823 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf/pb.c */,
+				F4C723EA10F64CBC9D9FFDB4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/source/rapidjson.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7FD6794331AC417397248004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E30D03D1F53C4E7099E752B0 /* xlua */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92411B7CCA59414D925B700A = {
+			isa = PBXGroup;
+			children = (
+				1F8362685282427084281566 /* xlua */,
+				C9BBB5BBC7CE4CE9A8C2A7CB /* ALL_BUILD */,
+				7FD6794331AC417397248004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97E7A2F276F64E4C838D04D5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A2DDE928FE9F43798605CE40 /* lua-5.1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ABA7F57354445BEC3D092 /* src */,
+			);
+			name = "lua-5.1.5";
+			sourceTree = "<group>";
+		};
+		C9BBB5BBC7CE4CE9A8C2A7CB /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				97E7A2F276F64E4C838D04D5 /* CMake Rules */,
+				5AC4F877785C4AB89C36A36C /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		D24008F7708E400EA9FCE7F1 /* luasocket */ = {
+			isa = PBXGroup;
+			children = (
+				AC8E41F410A04C178F961183 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/auxiliar.c */,
+				9A6EEECCB39C435CBA108B18 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/buffer.c */,
+				CEA076B9A8F148B78F79C848 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/except.c */,
+				36777DE0A75B4903A907E9DB /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/inet.c */,
+				E5172D897BC64C9CAD779C70 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/io.c */,
+				BA7AFFCD73DC4CB09DA75CCD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/luasocket.c */,
+				1B594E1FC8AB4C99BF698124 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/mime.c */,
+				A31B2D529F4C4401A6BE5E55 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/options.c */,
+				8C4F5753F95F4A2AA6E8FF47 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/select.c */,
+				4C1D058C1E2B43CA8D9950D8 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/tcp.c */,
+				E90B5A2E112C468B8F60061A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/timeout.c */,
+				D1E9E356D95543469F312929 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/udp.c */,
+				91C07147EC2B45E1A789BF2F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/usocket.c */,
+			);
+			name = luasocket;
+			sourceTree = "<group>";
+		};
+		FD3ABA7F57354445BEC3D092 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0E6CF614CD734297AC9D9313 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lapi.c */,
+				B5B890B47384499B8324806A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lauxlib.c */,
+				9842B7B6599B4309B0C550C4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lbaselib.c */,
+				316D7D852CC74E729EC35C9C /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lcode.c */,
+				38AFB3854D9E4179AEBABC0D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldblib.c */,
+				E25DC98AC8E24B0DB4CA3616 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldebug.c */,
+				FD05A71FCBA3449AB1632C9B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldo.c */,
+				3B41AAD144DD4FF6B1D33EE6 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldump.c */,
+				4006A360600140C4AC0DF077 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lfunc.c */,
+				9BCF12668AE34245A6A43CE4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lgc.c */,
+				B1A538FDA5B146949168CED1 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/linit.c */,
+				55DA7B740681450CA5CF0E7B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/liolib.c */,
+				294DFB2FC8DD421BBC826FB4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/llex.c */,
+				5347CABC1B684F8BB840180E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmathlib.c */,
+				FF2061FC9C1C4A7492CE0F7D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmem.c */,
+				C682878D65834B809517DB63 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loadlib.c */,
+				2CBF44DF7F74478BB8DBCFBA /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lobject.c */,
+				77A9E1F6A2CB42FD8D20D001 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lopcodes.c */,
+				0CE694ED097D4617A9255523 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loslib.c */,
+				F0F4F616D9454B658942F07A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lparser.c */,
+				37EAB96D3F0F4353A80B50FD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstate.c */,
+				64EB9078B2794C42B6EDE31B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstring.c */,
+				C7A8094428034B2F9A4C047F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstrlib.c */,
+				6403335B71454EA6845CEB6C /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltable.c */,
+				261B8F2EE3F54E0EB68DA925 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltablib.c */,
+				EFA9630AB8BE4F72BDF5EDF7 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltm.c */,
+				0B4C886EAAB341A58F157317 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lundump.c */,
+				FB4604C7D2FF47229D90F760 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lvm.c */,
+				03470E3E2D104609B0E51426 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lzio.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		161F8C96082341B089F4B79A /* xlua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA01470B7E040D1B6953848 /* Build configuration list for PBXNativeTarget "xlua" */;
+			buildPhases = (
+				D801FDBD7ACE436190548AD7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50D2591B3934C4CB4B967F1 /* PBXTargetDependency */,
+			);
+			name = xlua;
+			productName = xlua;
+			productReference = E30D03D1F53C4E7099E752B0 /* xlua */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA1823128596487090F1026C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1200;
+			};
+			buildConfigurationList = BB8C44EA91F94573B00DF2A8 /* Build configuration list for PBXProject "XLua" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				B95B1661F7024149ACBEBAE0 /* Debug */,
+				48784ACB89C545BE9BE5DC13 /* Release */,
+				5DE2FEF2D5244D91A7B1B4D0 /* MinSizeRel */,
+				591742F7A4FF40B59071C83F /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 92411B7CCA59414D925B700A;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				7EB92B13D3CE4374AF660AE8 /* ALL_BUILD */,
+				D11913483FA44857919AC926 /* ZERO_CHECK */,
+				161F8C96082341B089F4B79A /* xlua */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53E566777CD246959E1E927C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		AC5269BD9D814F0D80A11CCD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx -f /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		B2015ED2D07440289F1D39C6 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx -f /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		EA18409E434C41CCA4FFBC0A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D801FDBD7ACE436190548AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6955D61C56042C6A830AC3F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/LuaBitOp-1.0.2/bit.c */,
+				26A3E88D84CB4063A21A1692 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/i64lib.c */,
+				7AA549D1C5274C50BABA4E6F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcap.c */,
+				420D40E3D333479981338D65 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpcode.c */,
+				44215B76E20D4EB491BD5740 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpprint.c */,
+				EB41E45CF35F4517AF50DE8F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lptree.c */,
+				92EB194DB3494AC288EC0EF0 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg/lpvm.c */,
+				4A052DCBEE0C48A281839746 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lapi.c */,
+				8FFDEEE065A34C3FBE0FDAD2 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lauxlib.c */,
+				5AC6A475B824480588C67D96 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lbaselib.c */,
+				B5DACC19F0A64528AB97D086 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lcode.c */,
+				ACB8D2716DDD4FBEAAA35E21 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldblib.c */,
+				E88281A25C504F3F941B6B5A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldebug.c */,
+				8564FF3EDF064216B8B82D41 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldo.c */,
+				B826D868D6AA4D5BBBB9760A /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ldump.c */,
+				0A2A30FA9356470C864EF3A5 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lfunc.c */,
+				A7F03A5AC62B417D9215F46F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lgc.c */,
+				18F5D93681644673B5E300B5 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/linit.c */,
+				6EFF0F46B2BB4E28B208282F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/liolib.c */,
+				FB3AD33205C74C6D899C7AD0 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/llex.c */,
+				32104B33733E4FB9B792BA34 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmathlib.c */,
+				41CEA07A310F454ABA2179AC /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lmem.c */,
+				03257CE42196425F9500AEBC /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loadlib.c */,
+				46DC661F5D9547BCA6508361 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lobject.c */,
+				780DE18E1B90434282686313 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lopcodes.c */,
+				7FCFEEB110C44D35B24CA6B4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/loslib.c */,
+				F0559E5F58C047E0BA8E4DC7 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lparser.c */,
+				530089C64B7946DA9868B647 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstate.c */,
+				5EBE9B06B0514D7289F8D420 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstring.c */,
+				CA77C02E847A46D0A0A79F6E /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lstrlib.c */,
+				3D59E03803534E5BA6B107AE /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltable.c */,
+				8F04023ED85E4B16B902B954 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltablib.c */,
+				185FA23300544D43AE0F1BBF /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/ltm.c */,
+				E81379D963A448398BD9AFAD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lundump.c */,
+				16659C57C8544EB887F7686F /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lvm.c */,
+				F92C64DA8859480583A30589 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src/lzio.c */,
+				A60A09349A9D48F0A3D51E21 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf/pb.c */,
+				036B00D8853B46DBAB8C7618 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/source/rapidjson.cpp */,
+				84C99B0598E5420ABED91537 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/auxiliar.c */,
+				BF929DF1FFA94C1BAEB1DD45 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/buffer.c */,
+				D2B2DD11559D458184011426 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/except.c */,
+				5169EDDB5A3744DF844B2551 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/inet.c */,
+				A0B65E17B25A4517B375C51D /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/io.c */,
+				B1D45DDA159B495E8BD13DCE /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/luasocket.c */,
+				50C480CEB5C340C0B01CD1BD /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/mime.c */,
+				3D4BE3D4A1924182ABC32BAE /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/options.c */,
+				451F53467AAB49D3BB146196 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/select.c */,
+				2A9A8610E0AA4398911769FF /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/tcp.c */,
+				5E162261F6CC42059191DDC2 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/timeout.c */,
+				A5E50FEDBBBF487BA0DC556B /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/udp.c */,
+				D956A57B576D4B9A88275203 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/luasocket/usocket.c */,
+				89486D9FE4FE452EB3A009B4 /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/perflib.c */,
+				5A8AB09B51094748993633DC /* /Users/magictavern/Desktop/build_xlua_with_libs_self/build/xlua.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58BBD78DF9C34AD281109D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D11913483FA44857919AC926 /* ZERO_CHECK */;
+			targetProxy = EE8FA1FCDB2E4477B08170B4 /* PBXContainerItemProxy */;
+		};
+		F50D2591B3934C4CB4B967F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D11913483FA44857919AC926 /* ZERO_CHECK */;
+			targetProxy = 9546C54A1AB54EEDBC0954CE /* PBXContainerItemProxy */;
+		};
+		F511E946BD5B44C99CF047D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 161F8C96082341B089F4B79A /* xlua */;
+			targetProxy = 3D82B886669B41F68923B6B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06EA74BB03CD4CAD95FD342D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xlua_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/magictavern/Desktop/build_xlua_with_libs_self/build,"/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src","/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/etc",/Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx,"/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/include","/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf",/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg);
+				INFOPLIST_FILE = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeFiles/xlua.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC ";
+				OTHER_LDFLAGS = " -bundle -Wl,-headerpad_max_install_names  -lm";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xlua;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0FF77D5BE52643D8A88AD927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/build;
+			};
+			name = Release;
+		};
+		216C0DD370C545D6BC50D387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2C4191CC8AA84464BEE48288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4DFE2ED7DF8343DFA9A62AC2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/build;
+			};
+			name = MinSizeRel;
+		};
+		5A6797A9C9E946A581AD463D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5E668B6BB3464DD293A3688E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/build;
+			};
+			name = Debug;
+		};
+		6B5F490814FD4BED99F8CF45 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/build;
+			};
+			name = RelWithDebInfo;
+		};
+		7745243F6E66452EBF2A7E16 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xlua_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/magictavern/Desktop/build_xlua_with_libs_self/build,"/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src","/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/etc",/Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx,"/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/include","/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf",/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg);
+				INFOPLIST_FILE = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeFiles/xlua.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC ";
+				OTHER_LDFLAGS = " -bundle -Wl,-headerpad_max_install_names  -lm";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xlua;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		90E8ED242F6B4436A3F8B630 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BCBB465E65044495A2A31028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DDF4297FCA0F4D5DA0CD6834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DE67EA1DA7414DFD8D0B12C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xlua_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/magictavern/Desktop/build_xlua_with_libs_self/build,"/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src","/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/etc",/Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx,"/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/include","/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf",/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg);
+				INFOPLIST_FILE = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeFiles/xlua.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "   -fPIC ";
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC ";
+				OTHER_LDFLAGS = " -bundle -Wl,-headerpad_max_install_names  -lm";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xlua;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DEDEC8C070774577A6E1E447 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E0F0432EF3FD4CD7957971D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xlua_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/magictavern/Desktop/build_xlua_with_libs_self/build,"/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/src","/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-5.1.5/etc",/Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx,"/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-rapidjson/include","/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lua-protobuf",/Users/magictavern/Desktop/build_xlua_with_libs_self/build/lpeg);
+				INFOPLIST_FILE = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeFiles/xlua.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC ";
+				OTHER_LDFLAGS = " -bundle -Wl,-headerpad_max_install_names  -lm";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xlua;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F5AFF555E9E544CCBBCAF58B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B026026BDF2341DF8A50CD0F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4191CC8AA84464BEE48288 /* Debug */,
+				216C0DD370C545D6BC50D387 /* Release */,
+				5A6797A9C9E946A581AD463D /* MinSizeRel */,
+				F5AFF555E9E544CCBBCAF58B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB8C44EA91F94573B00DF2A8 /* Build configuration list for PBXProject "XLua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E668B6BB3464DD293A3688E /* Debug */,
+				0FF77D5BE52643D8A88AD927 /* Release */,
+				4DFE2ED7DF8343DFA9A62AC2 /* MinSizeRel */,
+				6B5F490814FD4BED99F8CF45 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E4C3B0111B744F8E9BFE7D5C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBB465E65044495A2A31028 /* Debug */,
+				DDF4297FCA0F4D5DA0CD6834 /* Release */,
+				DEDEC8C070774577A6E1E447 /* MinSizeRel */,
+				90E8ED242F6B4436A3F8B630 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EBA01470B7E040D1B6953848 /* Build configuration list for PBXNativeTarget "xlua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE67EA1DA7414DFD8D0B12C4 /* Debug */,
+				E0F0432EF3FD4CD7957971D0 /* Release */,
+				06EA74BB03CD4CAD95FD342D /* MinSizeRel */,
+				7745243F6E66452EBF2A7E16 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA1823128596487090F1026C /* Project object */;
+}

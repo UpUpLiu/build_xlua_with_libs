@@ -1,0 +1,3 @@
+/Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeFiles/xlua.dir
+/Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeFiles/ALL_BUILD.dir
+/Users/magictavern/Desktop/build_xlua_with_libs_self/build/build_lj_osx/CMakeFiles/ZERO_CHECK.dir
